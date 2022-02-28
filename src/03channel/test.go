@@ -12,14 +12,14 @@ import (
 
 var w sync.WaitGroup
 
-func f1(ch1 chan int) {
+func f1(ch1 chan<- int) {
 	defer w.Done()
 	for i := 0; i < 100; i++ {
 		ch1 <- i
 	}
 	close(ch1)
 }
-func f2(ch1, ch2 chan int) {
+func f2(ch1 <-chan int, ch2 chan<- int) { //单向通道只能从ch1中发送，ch2中接收
 	defer w.Done()
 	for x := range ch1 {
 		ch2 <- x * x
