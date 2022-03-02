@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DataBase/.idea/DataBase.iml" filepath="$PROJECT_DIR$/../DataBase/.idea/DataBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Note.iml" filepath="$PROJECT_DIR$/.idea/Note.iml" />
     </modules>
   </component>
