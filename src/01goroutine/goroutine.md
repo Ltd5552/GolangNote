@@ -1,7 +1,7 @@
-##goroutine与线程
-###可增长的栈
+## goroutine与线程
+### 可增长的栈
 OS线程（操作系统线程）一般都有固定的栈内存（通常为2MB）,一个goroutine的栈在其生命周期开始时只有很小的栈（典型情况下2KB），goroutine的栈不是固定的，他可以按需增大和缩小，goroutine的栈大小限制可以达到1GB，虽然极少会用到这么大。所以在Go语言中一次创建十万左右的goroutine也是可以的。
-###goroutine调度机制
+### goroutine调度机制
 GPM是Go语言运行时（runtime）层面的实现，是go语言自己实现的一套调度系统。区别于操作系统调度OS线程。
 - G goroutine 每个go关键字都会创建一个协程，里面有与所在P的绑定等信息
 - M machine   是GO运行时对操作系统内核线程的虚拟，M与内核线程是一一映射的关系，G都要放到M上才能运行
