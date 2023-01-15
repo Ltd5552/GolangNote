@@ -5,6 +5,18 @@ import (
 	"math"
 )
 
+const (
+	i = 1
+	j = 2
+)
+
+// 省略值表示与上面的相同
+const (
+	a = 7
+	b // 7
+	c // 7
+)
+
 func main() {
 
 	var a = "initial"

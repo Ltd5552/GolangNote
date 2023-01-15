@@ -21,4 +21,19 @@ func main() {
 	} else {
 		fmt.Println(num, "has multiple digits")
 	}
+
+	ifElse() //特殊用法
+
+}
+func getA() int {
+	return 1
+}
+
+func ifElse() {
+	b := 1
+	if a := getA(); a == b {
+		fmt.Println("=")
+	}
+	//不能在if-else外使用
+	//fmt.Println(a)
 }

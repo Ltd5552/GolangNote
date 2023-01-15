@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	a := 2
+	a := 1
 	switch a {
 	case 1:
 		fmt.Println("one")
@@ -27,5 +27,22 @@ func main() {
 		fmt.Println("It's before noon")
 	default:
 		fmt.Println("It's after noon")
+	}
+
+	switch2()
+}
+
+func switch2() {
+	s := 1
+	switch {
+	case s == 1:
+		fmt.Println("case1")
+		fallthrough
+	case s == 2:
+		fmt.Println("case2")
+	case s == 3:
+		fmt.Println("case3")
+	default:
+		fmt.Println("...")
 	}
 }
