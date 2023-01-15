@@ -5,12 +5,12 @@ import (
 	"sync"
 )
 
-//mutex互斥锁
+// mutex互斥锁
 var x = 0
 var wg sync.WaitGroup
 var lock sync.Mutex
 
-//读写互斥锁：读的次数远远大于写的次数时使用
+// 读写互斥锁：读的次数远远大于写的次数时使用
 func add() {
 	lock.Lock()
 	for i := 0; i < 500000; i++ {

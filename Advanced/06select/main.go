@@ -1,6 +1,6 @@
 package main
 
-//选择select
+// 选择select
 func main() {
 
 }

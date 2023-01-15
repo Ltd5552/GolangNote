@@ -5,7 +5,7 @@ import (
 	"net"
 )
 
-//tcp client
+// tcp client
 func main() {
 
 	//	1.与server端建立连接

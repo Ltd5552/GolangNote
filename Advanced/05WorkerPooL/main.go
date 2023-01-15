@@ -41,7 +41,7 @@ func main() {
 	}
 }
 
-//创建线程池
+// 创建线程池
 func creatPool(num int, jobChan <-chan int, result chan<- int) {
 	for i := 0; i < num; i++ {
 		go func(jobChan <-chan int, resultChan chan<- int) {

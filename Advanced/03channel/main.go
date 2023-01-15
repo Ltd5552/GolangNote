@@ -10,7 +10,7 @@ var b chan int //声明变量
 //通道类型必须初始化
 //引用类型
 
-//make给三个固定的类型(slice/map/channel)进行初始化
+// make给三个固定的类型(slice/map/channel)进行初始化
 var wg sync.WaitGroup
 
 func noBuffChannel() {
