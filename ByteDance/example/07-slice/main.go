@@ -45,4 +45,7 @@ func main() {
 	fmt.Println(s2)
 	fmt.Println(s3)
 	fmt.Println(s4)
+
+	//将切片打散
+	s4 = append(s4, s2...)
 }
