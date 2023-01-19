@@ -17,3 +17,10 @@ func main() {
 	add2ptr(&n)
 	fmt.Println(n) // 7
 }
+
+type Point struct {
+}
+
+func (p *Point) use() {
+
+}

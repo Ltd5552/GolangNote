@@ -16,7 +16,7 @@ func (u *user) resetPassword(password string) {
 }
 
 func main() {
-	a := user{name: "wang", password: "1024"}
+	a := user{name: "Ltd", password: "1024"}
 	a.resetPassword("2048")
 	fmt.Println(a.checkPassword("2048")) // true
 }
