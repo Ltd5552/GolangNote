@@ -1,5 +1,5 @@
 
-##sync.Map
+## sync.Map
 Go 语言中内置的 map 不是并发安全的，请看下面这段示例代码。
 ```go
 package main

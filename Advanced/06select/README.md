@@ -1,4 +1,4 @@
-##select
+## select
 - select的使用类似于switch语句，它有一系列case分支和一个默认的分支；
 - select不同于switch的顺序执行判断，是随机的
 - 每个case会对应一个通道的通信（接收或发送）过程。
