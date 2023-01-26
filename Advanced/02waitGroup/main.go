@@ -32,6 +32,6 @@ func main() {
 		wg.Add(1) //计数
 		go f1(i)
 	} //如何知道这10个goroutine都执行结束了？
-	//struct是值类型
+
 	wg.Wait() //等待wg的计数器减为0
 }

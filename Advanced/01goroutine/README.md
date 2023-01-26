@@ -1,4 +1,15 @@
 ## goroutine与线程
+```go
+func main() {
+	for i := 0; i < 100; i++ {
+		go func(i int) {
+			fmt.Println(i) //此时用的是函数外面的i，一次只
+		}(i) //闭包函数的话
+	}
+	fmt.Println("main")
+	time.Sleep(time.Second)
+}
+```
 ### 可增长的栈
 OS线程（操作系统线程）一般都有固定的栈内存（通常为2MB）,一个goroutine的栈在其生命周期开始时只有很小的栈（典型情况下2KB），goroutine的栈不是固定的，他可以按需增大和缩小，goroutine的栈大小限制可以达到1GB，虽然极少会用到这么大。所以在Go语言中一次创建十万左右的goroutine也是可以的。
 ### goroutine调度机制

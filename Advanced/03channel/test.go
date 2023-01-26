@@ -19,6 +19,7 @@ func f1(ch1 chan<- int) {
 	}
 	close(ch1)
 }
+
 func f2(ch1 <-chan int, ch2 chan<- int) { //单向通道只能从ch1中发送，ch2中接收
 	defer w.Done()
 	for x := range ch1 {
