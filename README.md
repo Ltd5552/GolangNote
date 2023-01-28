@@ -2,7 +2,7 @@
 
 ## About
 
-golang的一些笔记，目前内容大多源于一些文档、[字节的内部课程](https://juejin.cn/course/bytetech/7140987981803814919?from_page=course_list_page)，以及自己的一些经验、总结。
+golang的一些笔记，目前内容大多源于一些文档、[字节的内部课程](https://juejin.cn/course/bytetech/7140987981803814919)，以及自己的一些经验、总结。
 
 目前是一个基本框架，包含进阶（Advanced）、字节（ByteDance）、高质量（HightQuality）和未分类部分（Others），在未来学习中会不断地添加完善：
 
