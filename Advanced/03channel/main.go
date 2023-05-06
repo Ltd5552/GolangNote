@@ -30,7 +30,8 @@ func BuffChannel() {
 	b <- 10
 	fmt.Println("发送到channel中了")
 }
-func main() {
-	BuffChannel()
-	noBuffChannel()
-}
+
+//func main() {
+//	BuffChannel()
+//	noBuffChannel()
+//}

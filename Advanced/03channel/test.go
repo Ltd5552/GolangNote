@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sync"
 )
 
@@ -28,15 +27,15 @@ func f2(ch1 <-chan int, ch2 chan<- int) { //单向通道只能从ch1中发送，
 	close(ch2)
 }
 
-func main() {
-	a := make(chan int, 100)
-	b := make(chan int, 100)
-	w.Add(2)
-	go f1(a)
-	go f2(a, b)
-	w.Wait()
-	for ret := range b {
-		fmt.Println(ret)
-	}
-
-}
+//func main() {
+//	a := make(chan int, 100)
+//	b := make(chan int, 100)
+//	w.Add(2)
+//	go f1(a)
+//	go f2(a, b)
+//	w.Wait()
+//	for ret := range b {
+//		fmt.Println(ret)
+//	}
+//
+//}
