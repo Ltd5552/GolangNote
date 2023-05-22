@@ -20,17 +20,31 @@ func findUser(users []user, name string) (v *user, err error) {
 }
 
 func main() {
-	u, err := findUser([]user{{"wang", "1024"}}, "wang")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-	fmt.Println(u.name) // wang
+	//u, err := findUser([]user{{"wang", "1024"}}, "wang")
+	//if err != nil {
+	//	//调用err.Error()方法
+	//	fmt.Println(err)
+	//	return
+	//}
+	//fmt.Println(u.name) // wang
+	//
+	//if u, err := findUser([]user{{"wang", "1024"}}, "li"); err != nil {
+	//	fmt.Println(err) // not found
+	//	return
+	//} else {
+	//	fmt.Println(u.name)
+	//}
+	Equal()
+}
 
-	if u, err := findUser([]user{{"wang", "1024"}}, "li"); err != nil {
-		fmt.Println(err) // not found
-		return
+func Equal() {
+	err1 := errors.New("err1")
+	err2 := errors.New("err1")
+	fmt.Printf("%T", err1)
+	fmt.Printf("%T", err2)
+	if err1 == err2 {
+		fmt.Println("==")
 	} else {
-		fmt.Println(u.name)
+		fmt.Println("!=")
 	}
 }
